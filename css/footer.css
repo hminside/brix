@@ -1,0 +1,45 @@
+
+footer {
+    width: 90%;
+    height: 120px;
+    border-top: 1px solid #ddd;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.copy {
+
+    padding: 10px;
+}
+
+footer > ul{
+    display: flex;
+    gap:10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px){
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copy {
+        padding: 5px;
+    }
+
+    footer > ul{
+        padding: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+}
+
+}

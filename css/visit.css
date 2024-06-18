@@ -1,0 +1,74 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(default.css);
+
+.location {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.l_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    gap:50px;
+}
+
+iframe{
+    padding: 20px;
+    margin-left: 120px;
+    width:500px;
+    height:350px;
+    border:0;
+}
+
+.l_container > ul {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    text-wrap: nowrap;
+}
+
+.l_container > ul > li > img , .time_box > p > img {
+    width: 22px;
+    height: 22px;
+}
+
+.time_box {
+    display: flex;
+}
+
+.time_box > p > span {
+    color:red;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .l_container {
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    iframe{
+        width:400px;
+        height:300px;
+        padding: 0 10px;
+        margin-left: 0px;
+    }
+
+    .l_container > ul {
+        font-size: 13px; 
+        width:400px;
+        padding: 0 10px;
+        margin-left: 0px;
+
+    }
+
+}

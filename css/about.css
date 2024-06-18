@@ -1,0 +1,122 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(default.css);
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a_content {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#slideShow {
+    /*전체 컨테이너*/
+    width: 800px;
+    height: 650px;
+    position: relative;
+    /* margin: 20px auto; */
+    overflow: hidden; 
+    margin-bottom: 100px;
+    /*리스트 형식으로 이미지를 일렬로 정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은 hidden으로 숨겨줘야됨*/
+  }
+
+  .slides li {
+    width: 800px;
+    height: 650px;
+  }
+
+  .slides li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slides {
+    /*이미지들이 담겨있는 슬라이드 컨테이너*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3200px; /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+  } /* 첫 번째 슬라이드 가운데에 정렬하기위해 첫번째 슬라이드만 margin-left조정 */
+
+
+  /* .slides li:first-child {
+    margin-left: 50px;
+  }  */
+  /* 슬라이드들 옆으로 정렬 */
+  .slides li:not(:last-child) {
+    float: left;
+    /* margin-right: 40px; */
+  }
+
+  /* 버튼 */
+  .controller span {
+    font-weight: 50px;
+    position: absolute;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+  } /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+  .controller span:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+  .prev {
+    left: 10px;
+  } /* 이전 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+  .prev:hover {
+    transform: translateX(-10px);
+  }
+  .next {
+    right: 10px;
+  } /* 다음 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+  .next:hover {
+    transform: translateX(10px);
+  }
+
+  @media screen and (max-width: 768px){
+
+    .controller span {
+      font-size: 13px;
+      top: 50%;
+      cursor: pointer;
+    }
+
+    #slideShow {
+      width: 380px;
+      height: 320px;
+      margin-bottom: 20px;
+      padding:0 10px;
+
+    }
+
+    .slides li {
+      width: 380px;
+      height: 320px;
+    }
+
+    .a_content {
+      width: 100%;
+      padding:0 20px;
+      font-size: 13px;
+  }
+  
+
+
+  }
+
+ 
