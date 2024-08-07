@@ -92,36 +92,29 @@
 }
 
 
-@media (max-width: 767px){
+@media screen and (max-width: 480px){
 
-    .view{
-        width: 100%;
+    .l_container {
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    iframe{
+        width:400px;
+        height:300px;
         padding: 0 10px;
+        margin-left: 0px;
+    }
+
+    .l_container > ul {
+        font-size: 13px; 
+        width:400px;
+        padding: 0 10px;
+        margin-left: 0px;
 
     }
 
-    .notice_title {
-    padding-left: 0;
-
-    }
-    .board_view .info {
-        padding-left: 0;
-
-    }
-
-    .board_view .cont {
-        padding-left: 0;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    // 테블릿 세로
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    // 테블릿 가로
-}
-
-@media (min-width: 1200px) {
-    // 데스크탑 일반
 }
