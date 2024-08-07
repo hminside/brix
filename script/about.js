@@ -5,8 +5,8 @@ currentIdx = 0;
 slideCount = slideImg.length;
 prev = document.querySelector('.prev'); //이전 버튼
 next = document.querySelector('.next'); //다음 버튼
-if (matchMedia("screen and (max-width: 768px)").matches) {
-  slideWidth = 380;
+if (matchMedia("screen and (max-width: 480px)").matches) {
+  slideWidth = 400;
   // 1024px 이상에서 사용할 스크립트
 } else {
   slideWidth = 800;
