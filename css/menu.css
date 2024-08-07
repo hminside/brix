@@ -149,7 +149,7 @@
 /* 메뉴콘텐츠 */
 
 
-@media screen and (max-width: 768px){
+  @media screen and (max-width: 480px){
 
     .tab-menu {
         padding:0;
