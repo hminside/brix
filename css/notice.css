@@ -65,7 +65,7 @@
     display: none;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 480px){
 
     .n_container {
       width: 100%;
