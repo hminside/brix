@@ -41,21 +41,22 @@ table {
     height: 100%;
 }
 
-.page-top {
-	position: fixed;
-	bottom: 30px;
-	right: calc(28% - 300px);
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background-color:rgba(0, 0, 0, 0.3);
-    color: #fff;
-    font-weight: 500;
-    font-size: 17px;
-    /* text-align: center; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.scroll_top {
+position: fixed;
+border: none;
+bottom: 30px;
+right: calc(28% - 300px);
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background-color:rgba(0, 0, 0, 0.3);
+color: #fff;
+font-weight: 500;
+font-size: 17px;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
 /* 부제목 */
