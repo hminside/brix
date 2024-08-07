@@ -92,29 +92,24 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
 
-    .l_container {
-        flex-direction: column;
-        align-items: center;
-        gap:20px;
-        padding: 10px;
-        margin-bottom: 20px;
-    }
-
-    iframe{
-        width:400px;
-        height:300px;
+    .view{
+        width: 100%;
         padding: 0 10px;
-        margin-left: 0px;
-    }
-
-    .l_container > ul {
-        font-size: 13px; 
-        width:400px;
-        padding: 0 10px;
-        margin-left: 0px;
 
     }
 
+    .notice_title {
+    padding-left: 0;
+
+    }
+    .board_view .info {
+        padding-left: 0;
+
+    }
+
+    .board_view .cont {
+        padding: 10px 0;
+    }
 }
